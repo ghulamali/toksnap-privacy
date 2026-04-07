@@ -1,176 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<style>
-  body { margin: 0; padding: 0; background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-  canvas { display: block; }
-</style>
-</head>
-<body>
-<canvas id="c" width="1024" height="500"></canvas>
-<script>
-var canvas = document.getElementById('c');
-var ctx = canvas.getContext('2d');
-var W = 1024, H = 500;
+Privacy Policy
+This privacy policy applies to the TokSnap app (hereby referred to as "Application") for mobile devices that was created by ghulam ali safdari (hereby referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".
 
-// Background
-ctx.fillStyle = '#08080F';
-ctx.fillRect(0, 0, W, H);
 
-// Pink radial glow top center
-var grd1 = ctx.createRadialGradient(512, 0, 0, 512, 0, 400);
-grd1.addColorStop(0, 'rgba(233,30,140,0.45)');
-grd1.addColorStop(1, 'rgba(233,30,140,0)');
-ctx.fillStyle = grd1;
-ctx.fillRect(0, 0, W, H);
+Information Collection and Use
+The Application collects information when you download and use it. This information may include information such as
 
-// Cyan glow bottom right
-var grd2 = ctx.createRadialGradient(900, 500, 0, 900, 500, 350);
-grd2.addColorStop(0, 'rgba(0,255,209,0.15)');
-grd2.addColorStop(1, 'rgba(0,255,209,0)');
-ctx.fillStyle = grd2;
-ctx.fillRect(0, 0, W, H);
+Your device's Internet Protocol address (e.g. IP address)
+The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
+The time spent on the Application
+The operating system you use on your mobile device
 
-// Decorative lines
-ctx.strokeStyle = 'rgba(233,30,140,0.12)';
-ctx.lineWidth = 1;
-for (var i = 0; i < 8; i++) {
-  ctx.beginPath();
-  ctx.moveTo(0, i * 70);
-  ctx.lineTo(W, i * 70 + 30);
-  ctx.stroke();
-}
+The Application does not gather precise information about the location of your mobile device.
 
-// App icon background circle
-ctx.fillStyle = '#E91E8C';
-ctx.beginPath();
-ctx.roundRect(60, 160, 140, 140, 28);
-ctx.fill();
 
-// TS text in icon
-ctx.fillStyle = '#ffffff';
-ctx.font = 'bold 62px Arial';
-ctx.textAlign = 'center';
-ctx.textBaseline = 'middle';
-ctx.fillText('TS', 130, 230);
+The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.
 
-// Pink glow behind icon
-ctx.shadowColor = '#E91E8C';
-ctx.shadowBlur = 40;
-ctx.fillStyle = 'rgba(233,30,140,0.3)';
-ctx.beginPath();
-ctx.roundRect(58, 158, 144, 144, 30);
-ctx.fill();
-ctx.shadowBlur = 0;
 
-// App name TokSnap
-ctx.font = 'bold 78px Arial';
-ctx.textAlign = 'left';
-ctx.textBaseline = 'middle';
-ctx.fillStyle = '#ffffff';
-ctx.fillText('Tok', 230, 195);
+The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
 
-ctx.fillStyle = '#E91E8C';
-ctx.fillText('Snap', 355, 195);
 
-// Tagline
-ctx.font = '28px Arial';
-ctx.fillStyle = 'rgba(255,255,255,0.65)';
-ctx.fillText('Download Videos Fast & Free', 230, 255);
+For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
-// Divider line
-ctx.strokeStyle = 'rgba(255,255,255,0.1)';
-ctx.lineWidth = 1;
-ctx.beginPath();
-ctx.moveTo(230, 285);
-ctx.lineTo(720, 285);
-ctx.stroke();
 
-// Feature badges
-var badges = [
-  { text: 'HD Quality', icon: 'HD' },
-  { text: 'No Watermark', icon: 'NW' },
-  { text: 'MP3 Audio', icon: 'MP3' }
-];
+Third Party Access
+Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
 
-var bx = 230;
-badges.forEach(function(b) {
-  // Badge background
-  ctx.fillStyle = 'rgba(233,30,140,0.18)';
-  ctx.strokeStyle = 'rgba(233,30,140,0.5)';
-  ctx.lineWidth = 1.5;
-  ctx.beginPath();
-  ctx.roundRect(bx, 310, 155, 52, 12);
-  ctx.fill();
-  ctx.stroke();
 
-  // Badge text
-  ctx.font = 'bold 18px Arial';
-  ctx.fillStyle = '#ffffff';
-  ctx.textAlign = 'center';
-  ctx.fillText(b.text, bx + 77, 337);
+Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
 
-  bx += 175;
-});
+Google Play Services
+AdMob
 
-// Right side phone mockup outline
-ctx.strokeStyle = 'rgba(255,255,255,0.15)';
-ctx.lineWidth = 2;
-ctx.beginPath();
-ctx.roundRect(750, 60, 210, 380, 24);
-ctx.stroke();
+The Service Provider may disclose User Provided and Automatically Collected Information:
 
-// Phone screen
-ctx.fillStyle = '#100F18';
-ctx.beginPath();
-ctx.roundRect(762, 80, 186, 340, 16);
-ctx.fill();
+as required by law, such as to comply with a subpoena, or similar legal process;
+when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
+with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.
 
-// Pink download button inside phone
-ctx.fillStyle = '#E91E8C';
-ctx.beginPath();
-ctx.roundRect(780, 240, 150, 44, 10);
-ctx.fill();
+Opt-Out Rights
+You can stop all collection of information by the Application easily by uninstalling it.
 
-ctx.font = 'bold 16px Arial';
-ctx.fillStyle = '#ffffff';
-ctx.textAlign = 'center';
-ctx.fillText('Download', 855, 263);
 
-// Small URL bar in phone
-ctx.fillStyle = 'rgba(255,255,255,0.08)';
-ctx.beginPath();
-ctx.roundRect(780, 120, 150, 36, 8);
-ctx.fill();
+Data Retention Policy
+The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter.
 
-ctx.font = '11px Arial';
-ctx.fillStyle = 'rgba(255,255,255,0.4)';
-ctx.textAlign = 'left';
-ctx.fillText('vt.tiktok.com/...', 793, 143);
 
-// Video thumb in phone
-ctx.fillStyle = 'rgba(233,30,140,0.2)';
-ctx.beginPath();
-ctx.roundRect(780, 170, 150, 58, 8);
-ctx.fill();
+Children
+The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age.
 
-ctx.font = '11px Arial';
-ctx.fillStyle = 'rgba(255,255,255,0.6)';
-ctx.textAlign = 'center';
-ctx.fillText('Video ready', 855, 200);
 
-// Phone notch
-ctx.fillStyle = '#08080F';
-ctx.beginPath();
-ctx.roundRect(820, 80, 70, 14, 7);
-ctx.fill();
+Security
+The Service Provider provides safeguards to protect your information.
 
-// Bottom tagline
-ctx.font = '20px Arial';
-ctx.fillStyle = 'rgba(255,255,255,0.35)';
-ctx.textAlign = 'left';
-ctx.fillText('No account required  •  Works instantly  •  100% Free', 60, 455);
-</script>
-</body>
-</html>
+
+Changes
+This Privacy Policy may be updated from time to time.
+
+
+This privacy policy is effective as of 2026-04-06
+
+
+Your Consent
+By using the Application, you consent to this policy.
+
+
+Contact Us
+Email: ghulamali.safdari1@gmail.com
